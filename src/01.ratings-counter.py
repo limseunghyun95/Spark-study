@@ -11,7 +11,7 @@ conf = SparkConf().setMaster("local").setAppName("RatingHistogram")
 sc = SparkContext(conf=conf)
 
 # sc.textFile: 데이터를 로드하는데 한 줄씩 쪼개서 RDD 를 생성
-lines = sc.textFile("./Data/ml-100k/u.data")
+lines = sc.textFile("../Data/ml-100k/u.data")
 # RDD 각 모든 줄에 평점만 추출해서 rating 이라는 RDD 생성 (변환)
 ratings = lines.map(lambda x: x.split()[2])
 # rating을 Grouping 해서 각 평점 당 갯수를 구함 (Action)
