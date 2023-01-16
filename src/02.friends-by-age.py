@@ -1,3 +1,6 @@
+"""
+SNS 에 등록된 데이터에서 나이별 평균 팔로워 수(친구) 계산하기
+"""
 from pyspark import SparkConf, SparkContext
 
 
