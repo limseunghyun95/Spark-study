@@ -1,3 +1,4 @@
 Data/ml-100k/*
 Data/book.txt
 test.py
+.DS_store
