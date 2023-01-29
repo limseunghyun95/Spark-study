@@ -31,6 +31,6 @@ lowercaseWords = words.select(func.lower(words.word).alias("word"))
 '''
 word Count 출력
 '''
-lowercaseWords.groupBy("word").count().sort("count").show()
+lowercaseWords.groupBy("word").count().sort(func.desc("count")).show()
 
 spark.stop()
