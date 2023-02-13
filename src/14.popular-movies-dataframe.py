@@ -40,7 +40,7 @@ def lookupName(movieID):
     return nameDict.value[movieID]
 
 
-# 브로드캐스트 값으로 영화 ID 와 영화 제목 매핑
+# 브로드캐스트 값으로 영화 ID 와 영화 제목 매핑하는 사용자 정의 함수
 lookupNameUDF = func.udf(lookupName)
 
 # 매핑한 영화이름을 DataFrame에 추가
